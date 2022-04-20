@@ -5,7 +5,8 @@ echo "Fetching package..." &&
 curl https://launcher.mojang.com/download/Minecraft.deb -o pkg.deb &&
 echo "Done." &&
 echo "Installing package 1..." &&
-dpkg -i pkg.deb &&
+dpkg -i pkg.deb ||
+apt --fix-broken install &&
 apt -f install &&
 echo "Done." &&
 echo "Updating packages..." &&
