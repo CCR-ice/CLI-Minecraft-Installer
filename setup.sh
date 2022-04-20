@@ -9,10 +9,10 @@ dpkg -i pkg.deb &&
 apt -f install &&
 echo "Done." &&
 echo "Updating packages..." &&
-sudo apt-get update -y &&
+apt-get update -y &&
 echo "Done." &&
 echo "Installing package 2..." &&
-sudo apt-get install -y libsecret-1-0 &&
+apt-get install -y libsecret-1-0 &&
 echo "Done" &&
 echo "Clening up..." &&
 rm -rf pkg.deb &&
