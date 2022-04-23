@@ -1,4 +1,4 @@
-{
+(
   echo "Updating..." &&
   apt update && apt upgrade || dpkg --configure -a &&
   echo "Done." &&
@@ -17,8 +17,5 @@
   apt-get install -y libsecret-1-0 &&
   echo "Done" &&
   echo "Clening up..." &&
-  rm -rf pkg.deb &&
-  echo "Done." &&
-  minecraft-launcher;
-} ||
-echo "The installation was not fully secusessful."
+  rm -rf pkg.deb;
+) && echo "The installation was secuessful " || echo "The installation was not fully secusessful.";
