@@ -1,4 +1,4 @@
-}
+{
   echo "Updating..." &&
   apt update && apt upgrade || dpkg --configure -a &&
   echo "Done." &&
