@@ -17,5 +17,8 @@
   apt-get install -y libsecret-1-0 &&
   echo "Done" &&
   echo "Clening up..." &&
-  rm -rf pkg.deb;
+  echo "Removing \"pkg.deb\"" &&
+  rm -rf pkg.deb &&
+  echo "Done." &&
+  echo "Done.";
 ) && echo "The installation was fully secuessful!" || echo "The installation was not fully secusessful.";
