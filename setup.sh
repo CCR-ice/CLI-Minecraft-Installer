@@ -17,4 +17,7 @@ apt-get install -y libsecret-1-0 &&
 echo "Done" &&
 echo "Clening up..." &&
 rm -rf pkg.deb &&
+echo "Done." &&
+echo "Starting minecraft-launcher" &&
+minecraft-launcher &&
 echo "Done."
