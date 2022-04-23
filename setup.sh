@@ -18,4 +18,4 @@
   echo "Done" &&
   echo "Clening up..." &&
   rm -rf pkg.deb;
-) && echo "The installation was secuessful " || echo "The installation was not fully secusessful.";
+) && echo "The installation was fully secuessful!" || echo "The installation was not fully secusessful.";
