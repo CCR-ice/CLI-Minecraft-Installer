@@ -7,7 +7,7 @@
   echo "Done." &&
   echo "Installing package 1..." &&
   dpkg -i pkg.deb &&
-  apt -f install ||
+  apt -f install &&
   apt --fix-broken install &&
   echo "Done." &&
   echo "Updating packages..." &&
@@ -15,6 +15,7 @@
   echo "Done." &&
   echo "Installing package 2..." &&
   apt-get install -y libsecret-1-0 &&
+  apt install --fix-missing &&
   echo "Done" &&
   echo "Clening up..." &&
   echo "Removing \"pkg.deb\"" &&
