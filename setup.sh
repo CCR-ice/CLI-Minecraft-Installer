@@ -6,8 +6,8 @@
   curl https://launcher.mojang.com/download/Minecraft.deb -o pkg.deb &&
   echo "Done." &&
   echo "Installing package 1..." &&
-  dpkg -i pkg.deb ||
-  apt -f install &&
+  dpkg -i pkg.deb &&
+  apt -f install ||
   apt --fix-broken install &&
   echo "Done." &&
   echo "Updating packages..." &&
