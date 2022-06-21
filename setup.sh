@@ -7,8 +7,8 @@
   echo "Done." &&
   echo "Installing package 1..." &&
   dpkg -i pkg.deb ||
-  apt --fix-broken install &&
   apt -f install &&
+  apt --fix-broken install &&
   echo "Done." &&
   echo "Updating packages..." &&
   apt-get update -y &&
